@@ -1,7 +1,6 @@
 import yargs from "yargs"
 import { hideBin } from "yargs/helpers"
 import { RunCommand } from "./cli/cmd/run"
-import { GenerateCommand } from "./cli/cmd/generate"
 import { ConsoleCommand } from "./cli/cmd/account"
 import { ProvidersCommand } from "./cli/cmd/providers"
 import { AgentCommand } from "./cli/cmd/agent"
@@ -79,7 +78,6 @@ const cli = yargs(args)
   .command(AcpCommand)
   .command(McpCommand)
   .command(RunCommand)
-  .command(GenerateCommand)
   .command(DebugCommand)
   .command(ConsoleCommand)
   .command(ProvidersCommand)
